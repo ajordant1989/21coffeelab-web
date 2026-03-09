@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21. Coffee Lab — Coming Soon</title>
+  <meta name="description" content="21. Coffee Lab — Precision-roasted specialty coffee. Coming soon to 21coffeelab.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-wordmark">21<span>.</span> Coffee Lab</a>
+    <ul class="nav-links">
+      <li><a href="#story">About</a></li>
+      <li><a href="#social">Follow</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <!-- Fog layer -->
+    <div class="hero-fog">
+      <div class="fog-blob fog-amber"></div>
+      <div class="fog-blob fog-cool-l"></div>
+      <div class="fog-blob fog-cool-r"></div>
+      <div class="fog-blob fog-cream"></div>
+      <div class="fog-vignette"></div>
+    </div>
+
+    <img src="21.coffeelab.png" alt="21. Coffee Lab" class="hero-logo">
+
+    <div class="coming-badge">
+      <div class="coming-badge-dot"></div>
+      Coming Soon
+    </div>
+
+    <h1 class="hero-headline">Something is<br>being roasted.</h1>
+    <p class="hero-sub">Precision-roasted specialty coffee.<br>Bitcoin-inspired. Built different.</p>
+
+    <div class="orange-bar"></div>
+
+    <div class="notify-wrap">
+      <span class="notify-label">Be the first to know when we launch</span>
+      <form class="notify-form" onsubmit="handleNotify(event)">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Notify Me</button>
+      </form>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- BRAND STORY -->
+  <div class="section-wrap" id="story">
+    <p class="section-eyebrow">01 — About</p>
+    <div class="story-grid">
+      <div>
+        <h2 class="story-heading">
+          Coffee at the<br>precision of a<br><em>21 million</em><br>sat standard.
+        </h2>
+        <div class="story-stats">
+          <div>
+            <p class="stat-num">21<sup>.</sup></p>
+            <p class="stat-lbl">The Number</p>
+          </div>
+          <div>
+            <p class="stat-num">100<sup>%</sup></p>
+            <p class="stat-lbl">Specialty Grade</p>
+          </div>
+          <div>
+            <p class="stat-num">0<sup>x</sup></p>
+            <p class="stat-lbl">Compromise</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="story-body">
+          21. Coffee Lab is a precision-roasted specialty coffee brand built on a simple idea:
+          every variable matters. Just as Bitcoin's supply is fixed at 21 million,
+          we believe great coffee has no shortcuts — only process, precision, and relentless
+          attention to what's in the bag.
+        </p>
+        <p class="story-body">
+          We source single-origin green beans, roast in small batches on a Bellwether
+          countertop roaster, and deliver a product that's as honest as the blockchain
+          it's named after. No blends that hide flaws. No vague origin stories.
+          Just traceable, repeatable, exceptional coffee.
+        </p>
+        <p class="story-body" style="margin-bottom:36px;">
+          Based in Alabama. Shipping nationwide. Launching soon.
+        </p>
+        <div class="story-pills">
+          <span class="pill">Single Origin</span>
+          <span class="pill">Small Batch</span>
+          <span class="pill">Bellwether Roasted</span>
+          <span class="pill">Specialty Grade</span>
+          <span class="pill">Direct to Consumer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SOCIAL -->
+  <div class="section-wrap" id="social">
+    <p class="section-eyebrow">02 — Follow Along</p>
+    <div class="social-row">
+
+      <!-- Instagram -->
+      <a href="https://instagram.com/21coffeelab" target="_blank" class="social-card">
+        <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+        <div>
+          <p class="social-platform">Instagram</p>
+          <p class="social-handle">@21coffeelab</p>
+        </div>
+      </a>
+
+      <!-- X / Twitter -->
+      <a href="https://x.com/21coffeelab" target="_blank" class="social-card">
+        <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+        <div>
+          <p class="social-platform">X / Twitter</p>
+          <p class="social-handle">@21coffeelab</p>
+        </div>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://tiktok.com/@21coffeelab" target="_blank" class="social-card">
+        <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/>
+        </svg>
+        <div>
+          <p class="social-platform">TikTok</p>
+          <p class="social-handle">@21coffeelab</p>
+        </div>
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://youtube.com/@21coffeelab" target="_blank" class="social-card">
+        <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+        </svg>
+        <div>
+          <p class="social-platform">YouTube</p>
+          <p class="social-handle">@21coffeelab</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CONTACT -->
+  <div class="section-wrap" id="contact">
+    <p class="section-eyebrow">03 — Contact</p>
+    <div class="contact-grid">
+      <div>
+        <h2 class="contact-heading">Let's<br>talk<br>coffee.</h2>
+        <p class="contact-body">
+          Have a wholesale inquiry, collab idea, or just want to
+          know when we're live? Drop us a line. We respond to everything.
+        </p>
+        <a href="mailto:arthur@21coffeelab.com" class="contact-email-link">
+          arthur@21coffeelab.com
+        </a>
+      </div>
+      <form class="contact-form" onsubmit="handleContact(event)">
+        <div class="form-row">
+          <input class="finput" type="text" placeholder="First Name" required>
+          <input class="finput" type="text" placeholder="Last Name">
+        </div>
+        <input class="finput" type="email" placeholder="Email Address" required>
+        <input class="finput" type="text" placeholder="Subject">
+        <textarea class="finput" placeholder="Your message..."></textarea>
+        <button class="form-btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-brand">21<span>.</span> Coffee Lab, LLC</p>
+    <div class="footer-sq"></div>
+    <p class="footer-copy">© 2026 · 21coffeelab.com · All rights reserved</p>
+  </footer>
+
+  <script>
+    function handleNotify(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      const input = e.target.querySelector('input');
+      btn.textContent = 'You\'re on the list!';
+      btn.style.background = '#2A1810';
+      input.value = '';
+      input.placeholder = 'See you at launch.';
+      input.disabled = true;
+    }
+
+    function handleContact(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('.form-btn');
+      btn.textContent = 'Message Sent ✓';
+      btn.style.background = 'var(--orange)';
+      btn.style.color = '#fff';
+      btn.disabled = true;
+      setTimeout(() => {
+        e.target.reset();
+        btn.textContent = 'Send Message';
+        btn.style.background = 'transparent';
+        btn.style.color = 'var(--orange)';
+        btn.disabled = false;
+      }, 3000);
+    }
+  </script>
+
+</body>
+</html>
