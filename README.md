@@ -2,7 +2,7 @@
 
 **Coming soon landing page for [21coffeelab.com](https://21coffeelab.com)**
 
-Bitcoin-inspired specialty coffee. Precision-roasted. Built different.
+Low Time-Preference Coffee
 
 ---
 
